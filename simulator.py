@@ -27,25 +27,25 @@ transformations = [
         'matrix': np.array([[0.0, 0.0],
                             [0.0, 0.16]]),
         'offset': np.array([0.0, 0.0]),
-        'prob': 0.01   # 1% de probabilidade
+        'prob': 0.01   # 1% de probabilidade, ela é responsável por produzir a base/“talo” da samambaia, ou seja, aquela parte inferior praticamente reta
     },
     {
         'matrix': np.array([[0.85, 0.04],
                             [-0.04, 0.85]]),
         'offset': np.array([0.0, 1.6]),
-        'prob': 0.85   # 85% de probabilidade
+        'prob': 0.85   # 85% de probabilidade, “leve rotação”, é a transformação principal. Ela gera a maior parte da folhagem, pois move a maior parte dos pontos “para cima” e ligeiramente inclinados, montando aquele visual de “ramificação”
     },
     {
         'matrix': np.array([[0.2, -0.26],
                             [0.23, 0.22]]),
         'offset': np.array([0.0, 1.6]),
-        'prob': 0.07   # 7% de probabilidade
+        'prob': 0.07   # 7% de probabilidade, essa transformação, escolhida 7% das vezes, gera folhas específicas para um dos “lados” do fractal. É uma parte do “ramo lateral” (às vezes referida como “leaf left”). 
     },
     {
         'matrix': np.array([[-0.15, 0.28],
                             [0.26, 0.24]]),
         'offset': np.array([0.0, 0.44]),
-        'prob': 0.07   # 7% de probabilidade
+        'prob': 0.07   # 7% de probabilidade, forma a outra parte das folhas superiores/laterais (a “leaf right”), aparecendo 7% das vezes. Assim, a cada iteração, o ponto pode “saltar” para esses ramos do fractal.
     }
 ]
 
