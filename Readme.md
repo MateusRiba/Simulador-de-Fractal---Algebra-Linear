@@ -1,4 +1,4 @@
-# Três Fractais 
+# Simulador de Fractal
 
 Este projeto demonstra como a **Álgebra Linear** (transformações afins e recursão) pode ser utilizada para gerar fractais. Três fractais distintos são construídos:
 
